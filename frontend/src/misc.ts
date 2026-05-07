@@ -25,7 +25,7 @@ export function getLocationNumber(date: Date): number {
 
   console.log("day_number", day_number);
   // Select a random number between 0 and 639 based on
-  const result = Math.round(seededRandom(day_number, 0, 639));
+  const result = Math.round(seededRandom(day_number, 1, 639));
   console.log("result", result);
   return result;
 }
